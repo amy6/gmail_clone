@@ -22,7 +22,7 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: Drawer(),
+      drawer: getMailDrawer(),
       appBar: AppBar(
         title: Text(
           "Primary",
@@ -122,6 +122,35 @@ class MyHomePage extends StatelessWidget {
               ],
             );
           }),
+    );
+  }
+
+  Drawer getMailDrawer() {
+    
+    Text name = new Text(
+      "Harry",
+      style: TextStyle(fontWeight: FontWeight.w500, fontSize: 15.0),
+    );
+
+    Text email = new Text(
+      "harry@gmail.com",
+      style: TextStyle(fontWeight: FontWeight.w500, fontSize: 15.0),
+    );
+    
+    return Drawer(
+      child: Column(
+        children: <Widget>[
+          UserAccountsDrawerHeader(
+              decoration: BoxDecoration(color: Colors.red),
+              accountName: name,
+              accountEmail: email,
+          currentAccountPicture: Icon(
+            Icons.account_circle,
+            size: 50.0,
+            color: Colors.white,
+          ),)
+        ],
+      ),
     );
   }
 }

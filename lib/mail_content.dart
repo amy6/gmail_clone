@@ -15,10 +15,30 @@ class MailContent {
 
 class MailGenerator {
   static var mailList = [
-    MailContent("Happy Halloween", "John Doe", "31 Oct",
-        "This is a simple demo mail..."),
-    MailContent("Happy Halloween", "John Doe", "31 Oct",
-        "This is a simple demo mail..."),
+    MailContent("John Doe", "Happy Halloween",
+        "This is a simple demo mail...", "31 Oct"),
+    MailContent("John Doe", "Happy Halloween",
+        "This is a simple demo mail...", "31 Oct"),
+    MailContent("John Doe", "Happy Halloween",
+        "This is a simple demo mail...", "31 Oct"),
+    MailContent("John Doe", "Happy Halloween",
+        "This is a simple demo mail...", "31 Oct"),
+    MailContent("John Doe", "Happy Halloween",
+        "This is a simple demo mail...", "31 Oct"),
+    MailContent("John Doe", "Happy Halloween",
+        "This is a simple demo mail...", "31 Oct"),
+    MailContent("John Doe", "Happy Halloween",
+        "This is a simple demo mail...", "31 Oct"),
+    MailContent("John Doe", "Happy Halloween",
+        "This is a simple demo mail...", "31 Oct"),
+    MailContent("John Doe", "Happy Halloween",
+        "This is a simple demo mail...", "31 Oct"),
+    MailContent("John Doe", "Happy Halloween",
+        "This is a simple demo mail...", "31 Oct"),
+    MailContent("John Doe", "Happy Halloween",
+        "This is a simple demo mail...", "31 Oct"),
+    MailContent("John Doe", "Happy Halloween",
+        "This is a simple demo mail...", "31 Oct"),
   ];
 
   static MailContent getMailContent(int position) => mailList[position];
